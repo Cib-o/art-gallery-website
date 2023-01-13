@@ -24,6 +24,8 @@ p {
   font-family: 'Outfit', sans-serif;
 }
 
+/** Home Page **/
+
 .top-section {
   display: flex;
   justify-content: center;
@@ -39,7 +41,6 @@ p {
 .left-side h1 {
   position: absolute;
   color: var(--white);
-  font-style: normal;
   font-weight: 900;
   font-size: 96px;
   margin-top: 190px;
@@ -65,7 +66,6 @@ p {
   margin-top: 190px;
   margin-left: -65px;
   color: var(--dark-grey);
-  font-style: normal;
   font-weight: 300;
   font-size: 22px;
   line-height: 32px;
@@ -83,6 +83,11 @@ p {
   width: 260px;
 }
 
+.right-side a {
+  display: flex;
+  text-decoration: none;
+}
+
 .right-side div button {
   display: flex;
   justify-content: center;
@@ -97,6 +102,7 @@ p {
   letter-spacing: 3.63636px;
   width: 204px;
   cursor: pointer;
+  transition: background-color 0.2s;
 }
 
 .right-side div span {
@@ -107,11 +113,20 @@ p {
   height: 72px;
   width: 56px;
   cursor: pointer;
+  transition: background-color 0.2s;
 }
 
 .right-side div span img {
   height: 24px;
   width: 8px;
+}
+
+.right-side a:hover button {
+  background-color: var(--gold);
+}
+
+.right-side a:hover span {
+  background-color: var(--almost-black);
 }
 
 .middle-section {
@@ -141,14 +156,12 @@ p {
 .info-card-1 h1 {
   color: var(--almost-black);
   margin: 0;
-  font-style: normal;
   font-weight: 900;
   font-size: 60px;
 }
 
 .info-card-1 p {
   color: var(--dark-grey);
-  font-style: normal;
   font-weight: 300;
   font-size: 22px;
 }
@@ -185,14 +198,12 @@ p {
 
 .info-card-2 h1 {
   color: var(--white);
-  font-style: normal;
   font-weight: 900;
   font-size: 60px;
 }
 
 .info-card-2 p {
   color: var(--white);
-  font-style: normal;
   font-weight: 300;
   font-size: 22px;
 }
@@ -214,12 +225,12 @@ p {
 
 .bottom-section p {
   color: var(--white);
-  font-style: normal;
   font-weight: 300;
   font-size: 18px;
   line-height: 28px;
+  margin-right: 180px;
   height: 84px;
-  width: 380px;
+  width: 430px;
 }
 
 .social {
@@ -227,4 +238,139 @@ p {
   justify-content: space-between;
   height: 20px;
   width: 100px;
+  cursor: pointer;
+}
+
+.social img:hover {
+  filter: brightness(0) saturate(100%) invert(87%) sepia(76%) saturate(3909%) hue-rotate(304deg) brightness(88%) contrast(87%);
+}
+
+/** Location Page **/
+
+.location-top-section {
+  display: flex;
+}
+
+.location-top-section a {
+  display: flex;
+  flex-direction: row-reverse;
+  position: absolute;
+  text-decoration: none;
+  margin-left: 157px;
+}
+
+.location-top-section button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  border: 0;
+  background-color: var(--almost-black);
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3.63636px;
+  width: 204px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.location-top-section span {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-color: var(--gold);
+  height: 72px;
+  width: 56px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.location-top-section span img {
+  height: 24px;
+  width: 8px;
+}
+
+.location-top-section a:hover button {
+  background-color: var(--gold);
+}
+
+.location-top-section a:hover span {
+  background-color: var(--almost-black);
+}
+
+.location-middle-section {
+  display: flex;
+  background-color: var(--almost-black);
+  height: 548px;
+  width: 1440px;
+}
+
+.location-middle-section h1 {
+  color: var(--white);
+  font-weight: 900;
+  font-size: 70px;
+  margin-top: 104px;
+  margin-left: 165px;
+  line-height: 70px;
+  height: 140px;
+  width: 350px;
+}
+
+.location-middle-section div {
+  display: flex;
+  flex-direction: column;
+  margin-left: 200px;
+}
+
+.location-middle-section div h1 {
+  color: var(--gold);
+  font-weight: 900;
+  font-size: 36px;
+  margin-left: 0;
+  line-height: 36px;
+  height: auto;
+}
+
+.location-middle-section div p {
+  color: var(--white);
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 32px;
+  height: 96px;
+  width: 540px;
+}
+
+.location-bottom-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--gold);
+  margin-top: 150px;
+  height: 244px;
+  width: 100%;
+}
+
+.dark-light {
+  height: 58px;
+  width: 160px;
+}
+
+.location-bottom-section p {
+  color: var(--almost-black);
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+  margin-right: 180px;
+  height: 84px;
+  width: 430px;
+}
+
+.location-bottom-section .social img {
+  filter: brightness(0) saturate(100%) invert(0%) sepia(53%) saturate(1259%) hue-rotate(23deg) brightness(109%) contrast(84%);
+}
+
+.location-bottom-section .social img:hover {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(42%) saturate(761%) hue-rotate(171deg) brightness(122%) contrast(105%);
 }
